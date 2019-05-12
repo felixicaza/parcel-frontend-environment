@@ -1,0 +1,23 @@
+extends pug/template
+
+//- Head
+block append assets
+   link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css")
+   link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css")
+
+block append preload
+   link(rel="preload", href="./sass/main.sass", as="style")
+   link(rel="preload", href="./js/index.js", as="script")
+
+block append styles
+   link(rel="stylesheet", href="./sass/main.sass")
+
+//- Body
+block append header
+
+block append content
+
+block append footer
+
+block append scripts
+   script(src="./js/index.js")
